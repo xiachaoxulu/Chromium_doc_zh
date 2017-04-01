@@ -5,7 +5,7 @@ https://www.chromium.org/developers/design-documents
 
 翻译之加强对android webview理解
 
-#设计文档
+# 设计文档
 
 - [Start Here: 背景阅读](Start_Here_Background_Reading/README.md): 描述Chromium的宏观架构
   - [多进程架构](Start_Here_Background_Reading/Multi-process_Architecture.md)
@@ -14,13 +14,13 @@ https://www.chromium.org/developers/design-documents
 
   - [Chromium如何展示web界面](Start_Here_Background_Reading/How_Chromium_Displays_Web_Pages.md): 自底向上概述WebKit是如何嵌入到Chromium中的
   
-##See Also: 源代码中的设计文档
+## See Also: 源代码中的设计文档
 
     https://chromium.googlesource.com/chromium/src/+/master/docs/
 
 
 
-- ###[整体架构](General_Architecture/README.md)
+- ### [整体架构](General_Architecture/README.md)
   - [跨平台开发的约定与模式](General_Architecture/Conventions_and_patterns_for_multi-platform_development.md)
   - [扩展安全架构](General_Architecture/Extension_Security_Architecture.md): 扩展系统是如何降低扩展脆弱性的严重程度的
   - [硬件视频加速](General_Architecture/HW_Video_Acceleration_in_Chrom{eium}{OS}.md)
@@ -37,16 +37,16 @@ https://www.chromium.org/developers/design-documents
   - [启动](General_Architecture/Startup.md)
   - [线程](General_Architecture/Threading.md): 在chromium中如何使用线程
   
- 也可以看看 [V8](http://code.google.com/apis/v8/)的文档, 这是Chromium使用的Javascript引擎
+ 也可以看看 [V8](白百合)的文档, 这是Chromium使用的Javascript引擎
 
-- ###[UI Framework](UI_Framework/README.md)
+- ### [UI Framework](UI_Framework/README.md)
   - [UI开发实践](UI_Framework/UI_Development_Practices.md): 在Chrome的content区域内外开发的最佳实践
   - [Views framework](UI_Framework/Views_framework.md): Windows和Chrome OS上使用的UI layout 层级
   - [views Windowing系统](UI_Framework/views_Windowing_system.md): 如何用view构建对话框盒子和其他windowUI
   - [Aura](UI_Framework/Aura.md): Chrome下一代硬件加速UI框架，新的ChromeOS 系统由它构建而成
   - [Native控制](UI_Framework/NativeControls.md): 在view中使用平台原生widget
   - 用View和Aura实现聚焦与激活
-- ###[Graphics](Graphics/README.md)
+- ### [Graphics](Graphics/README.md)
   - [概述](Graphics/Overview.md)
   - [Chrome中使用的GPU加速](Graphics/GPU_Accelerated_Compositing_in_Chrome.md)
   - [GPU特性状态仪表盘](Graphics/GPU_Feature_Status_Dashboard.md)
@@ -61,7 +61,7 @@ https://www.chromium.org/developers/design-documents
   - [实现层绘制](Graphics/Impl-side_Painting.md)
   - [视频回放与排版](Graphics/Video_Playback_and_Compositor.md)
   - [ANGLE架构表示](Graphics/ANGLE_architecture_presentation.md)
-- [网络栈](Network_stack/README.md)
+- ### [网络栈](Network_stack/README.md)
   - [概述](Network_stack/Overview.md)
   - [网络栈的目标](Network_stack/Network_Stack_Objectives.md)
   - [Crypto](Network_stack/Crypto.md)
@@ -75,7 +75,7 @@ https://www.chromium.org/developers/design-documents
   - [用SPDY页面使得网络更快](Network_stack/Make_the_web_faster_with_SPDY_pages.md)
   - [用OUIC页面使得网络更快](Network_stack/_the_web_even_faster_with_QUIC_pages.md)
   - [Cookie存储与获取](Network_stack/Cookie_storage_and_retrieval.md)
-- [安全](Security/README.md)
+- ### [安全](Security/README.md)
   - [概述](Security/Security_Overview.md)
   - [保护缓存用户数据](Security/Protecting_Cached_User_Data.md)
   - [系统强化](Security/System_Hardening.md)
@@ -83,21 +83,21 @@ https://www.chromium.org/developers/design-documents
   - [TPM使用](Security/TPM_Usage.md)
   - [每个页面的子源](Security/Per-page_Suborigins.md)
   - [加密分割恢复](Security/Encrypted_Partition_Recovery.md)
-- [Input](Input/README.md)
+- ### [Input](Input/README.md)
   - 看这个文档[chromium input](Input/chromium_input.md)（关于设计文档以及一些其他资源）
-- [绘制](Rendering/README.md)
+- ### [绘制](Rendering/README.md)
   - [多列布局](Rendering/Multi-column_layout.md)
   - [刷新时重置Style](Rendering/Style_Invalidation_in_Blink.md)
   - [刷新与空间的协调](Rendering/Blink_Coordinate_Spaces.md)
-- [构建](Building/README.md)
+- ### [构建](Building/README.md)
   - [IDL构建](Building/IDL_build.md)
   - [IDL编译器](Building/IDL_compiler.md)
   - 也可以看这个文档，[GYP, the build script generation tool.](Building/GYP_the_build_script_generation_tool..md)
-- [测试](Testing/README.md)
+- ### [测试](Testing/README.md)
   - [Layout测试结果面板](Testing/Layout_test_results_dashboard.md)
   - [Test shell中的真实主题](Testing/Generic_theme_for_Test_Shell.md)
   - [完全回退移除layout测试](Testing/Moving_LayoutTests_fully_upstream.md)
-- [特性相关](Feature-Specific/README.md)
+- ### [特性相关](Feature-Specific/README.md)
   - [关于冲突](Feature-Specific/aboutconflicts.md)
   - [可用性](Feature-Specific/Accessibility.md): 当前（以及将来）可用性支持的轮廓。
   - [自适应屏幕截图与镜像](Feature-Specific/Auto-Throttled_Screen_Capture_and_Mirroring.md)
@@ -155,7 +155,7 @@ https://www.chromium.org/developers/design-documents
   - [WebSocket](Feature-Specific/WebSocket.md): 允许web应用程序与服务端进程维护一个双向的交流
   - [Web MIDI](Feature-Specific/Web_MIDI.md)
   - [Web导航 API内部实现](Feature-Specific/WebNavigation_API_internals.md)
-- [OS-相关](OS-Specific/README.md)
+- ### [OS-相关](OS-Specific/README.md)
   - [Android](OS-Specific/Android/README.md)
     - [Android上的Java资源](OS-Specific/Android/Java_Resources_on_Android.md)
     - [JNI绑定](OS-Specific/Android/JNI_Bindings.md)
@@ -177,7 +177,7 @@ https://www.chromium.org/developers/design-documents
     - [沙箱设计](OS-Specific/Mac_OS_X/Sandboxing_Design.md)
     - [Tab切换设计(包括标签布局与标签拖动)](OS-Specific/Mac_OS_X/Tab_Strip_Design__Includes_tab_layout_and_tab_dragging_.md)
     - [扳手状菜单按钮](OS-Specific/Mac_OS_X/Wrench_Menu_Buttons.md)
-- [Other](Other/README.md)
+- ### [Other](Other/README.md)
   - [64位支持](Other/64-bit_Support.md)
   - [浏览器组件/层级组件](Other/Browser_Components___Layered_Components.md)
   - [闭合编译Chrome代码](Other/Closure_Compiling_Chrome_Code.md)
